@@ -9,7 +9,7 @@ $fa-font-path: "../fonts" !default;
 @import "partials/variable";
 @import "partials/mixins";
 @import "partials/home";
-//@import "partials/animations.scss";
+@import "partials/animations.scss";
 
 // The last instance
 @import "partials/media";

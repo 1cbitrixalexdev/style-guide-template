@@ -6,17 +6,18 @@
 
 // MD
 @media (min-width: 768px) {
-  aside {
-    margin-left: -250px;
-    &.active {
-      margin-left: 0;
-    }
-  }
+
 }
 
 // LG
 @media (min-width: 992px) {
+  aside {
+    margin-left: -250px;
 
+    &.active {
+      margin-left: 0;
+    }
+  }
 }
 
 // XL
@@ -57,17 +58,8 @@ $cards-per-line-news: (
 );
 @each $name, $breakpoint in $grid-breakpoints {
   @media (min-width: $breakpoint) {
-    #specialsTable,
-    #billboardTable,
-    .board .offers {
-      .card-deck .card {
-        flex: 0 0 calc(#{100/map-get($cards-per-line, $name)} * 1% - #{$grid-gutter-width});
-      }
-    }
-    .articles {
-      .card-deck .card {
-        flex: 0 0 calc(#{100/map-get($cards-per-line-news, $name)} * 1% - #{$grid-gutter-width});
-      }
+    .card-deck .card {
+      flex: 0 0 calc(#{100/map-get($cards-per-line, $name)} * 1% - #{$grid-gutter-width});
     }
   }
 }
