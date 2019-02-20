@@ -25,31 +25,66 @@
 <div class="wrapper">
     <aside class="navbar navbar-expand-lg navbar-light bg-light active">
         <div class="sticky-top">
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#home"><span class="fas fa-home"></span> Главная</a>
+            <ul class="nav nav-pills" role="tablist">
+                <li>
+                    <a href="#pills-home"
+                       id="pills-home-tab"
+                       data-toggle="tab"
+                       role="tab"
+                       aria-controls="pills-home"
+                       aria-selected="true"
+                       class="active">
+                        <span class="fas fa-home"></span> Главная</a>
                 </li>
                 <li>
-                    <a href="#colors"><span class="fas fa-palette"></span> Цвета</a>
+                    <a href="#pills-colors"
+                       id="pills-colors-tab"
+                       data-toggle="tab"
+                       role="tab"
+                       aria-controls="pills-colors"
+                       aria-selected="false">
+                        <span class="fas fa-palette"></span> Цвета</a>
                 </li>
                 <li>
-                    <a href="#fonts"><span class="fas fa-font"></span> Шрифты</a>
+                    <a href="#pills-fonts"
+                       id="pills-fonts-tab"
+                       data-toggle="tab"
+                       role="tab"
+                       aria-controls="pills-fonts"
+                       aria-selected="false">
+                        <span class="fas fa-font"></span> Шрифты</a>
                 </li>
                 <li>
-                    <a href="#typography"><span class="fas fa-list-ol"></span> Типографика</a>
+                    <a href="#pills-typography"
+                       id="pills-typography-tab"
+                       data-toggle="tab"
+                       role="tab"
+                       aria-controls="pills-typography"
+                       aria-selected="false">
+                        <span class="fas fa-list-ol"></span> Типографика
+                    </a>
                 </li>
                 <li>
-                    <a href="#icons"><span class="fas fa-paint-brush"></span> Иконки</a>
+                    <a href="#pills-icons"
+                       id="pills-icons-tab"
+                       data-toggle="tab"
+                       role="tab"
+                       aria-controls="pills-icons"
+                       aria-selected="false">
+                        <span class="fas fa-paint-brush"></span> Иконки</a>
                 </li>
             </ul>
         </div>
     </aside>
     <main class="container-fluid">
-        <div>
+        <div class="tab-content">
             <div id="sidebarCollapse">
                 <span class="far fa-times-circle"></span>
             </div>
-            <section id="home" class="page-tab animated fadeInUp">
+            <section id="pills-home"
+                     class="animated fadeInUp tab-pane fade show active"
+                     role="tabpanel"
+                     aria-labelledby="pills-home-tab">
                 <h1 class="home">Style Guide</h1>
                 <div class="page-title">для проекта "Новый проект"</div>
                 <div class="technical-review">
@@ -106,6 +141,38 @@
                         <dd class="col-md-9 col-lg-10">coolbusiness.com, great.biz
                         </dd>
                     </dl>
+                </div>
+            </section>
+            <section id="pills-colors"
+                     class="animated fadeInUp tab-pane fade"
+                     role="tabpanel"
+                     aria-labelledby="pills-colors-tab">
+                <div class="colors-review">
+                    <h2>Цвета в проекте:</h2>
+                </div>
+            </section>
+            <section id="pills-fonts"
+                     class="animated fadeInUp tab-pane fade"
+                     role="tabpanel"
+                     aria-labelledby="pills-fonts-tab">
+                <div class="fonts-review">
+                    <h2>Шрифты проекта:</h2>
+                </div>
+            </section>
+            <section id="pills-typography"
+                     class="animated fadeInUp tab-pane fade"
+                     role="tabpanel"
+                     aria-labelledby="pills-typography-tab">
+                <div class="typography-review">
+                    <h2>Типографика проекта:</h2>
+                </div>
+            </section>
+            <section id="pills-icons"
+                     class="animated fadeInUp tab-pane fade"
+                     role="tabpanel"
+                     aria-labelledby="pills-icons-tab">
+                <div class="icons-review">
+                    <h2>Иконки в проекте:</h2>
                 </div>
             </section>
         </div>
