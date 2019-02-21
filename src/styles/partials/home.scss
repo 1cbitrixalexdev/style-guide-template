@@ -141,7 +141,8 @@ aside {
 .tab-pane {
   padding: 0 2rem 2rem 2rem;
 
-  .technical-review {
+  .technical-review,
+  .fonts-review {
     margin-top: $baseMargin;
 
     h2 {
@@ -168,6 +169,49 @@ aside {
 
     .fa-question-circle {
       cursor: pointer;
+    }
+  }
+}
+
+#pills-fonts {
+  .fonts-specimen {
+    margin: $blockMargin 0;
+
+    .h1, .h2, .h3, .h4 {
+      font-family: $headers-font;
+    }
+
+    .main-menu-style {
+      font-weight: bold;
+      @include font-size(18px);
+    }
+
+    .footer-menu-style {
+      @include font-size(15px);
+    }
+
+    .sidebar-menu-style {
+      @include font-size(17px);
+    }
+
+    .button-style {
+      letter-spacing: 2px;
+      @include font-size(17px);
+    }
+
+    .block-header-style {
+      font-weight: bold;
+      text-transform: uppercase;
+      @include font-size(18px);
+    }
+
+    .description-style {
+      font-family: $headers-font;
+      @include font-size(15px);
+    }
+
+    .footnote-style {
+      @include font-size(12px);
     }
   }
 }
