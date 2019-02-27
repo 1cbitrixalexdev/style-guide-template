@@ -144,7 +144,8 @@ aside {
   .technical-review,
   .fonts-review,
   .colors-review,
-  .buttons-review {
+  .buttons-review,
+  .icons-review {
     margin-top: $baseMargin;
 
     h2 {
@@ -421,5 +422,20 @@ aside {
       }
     }
 
+  }
+}
+
+.svg,
+.replaced-svg {
+  &.icons-primary {
+    fill: $primary-color;
+  }
+
+  &.icons-secondary {
+    fill: $secondary-text-color;
+  }
+
+  &.icons-accent {
+    fill: $accent-color;
   }
 }
