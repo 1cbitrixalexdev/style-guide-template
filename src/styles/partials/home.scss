@@ -145,7 +145,8 @@ aside {
   .fonts-review,
   .colors-review,
   .buttons-review,
-  .icons-review {
+  .icons-review,
+  .typography-review {
     margin-top: $baseMargin;
 
     h2 {
@@ -438,4 +439,20 @@ aside {
   &.icons-accent {
     fill: $accent-color;
   }
+}
+
+.blockquote {
+  footer {
+    color: $secondary-text-color;
+    @include font-size(13px);
+
+    &:before {
+      content: "~";
+      margin: 0 1rem;
+    }
+  }
+}
+
+.main-list {
+  list-style-type: square;
 }
