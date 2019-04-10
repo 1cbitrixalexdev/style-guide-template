@@ -303,86 +303,6 @@ aside {
   .button-area {
     text-align: center;
 
-    .btn {
-      border-radius: .25rem;
-      border-width: 0;
-      letter-spacing: 2px;
-      padding: .75rem 1.5rem;
-      transition: background-color ease-in-out .25s;
-
-      &:focus,
-      &:active {
-        box-shadow: none;
-      }
-
-      &:disabled {
-        cursor: not-allowed;
-      }
-    }
-
-    .btn-primary {
-      background-color: $primary-color;
-      border-bottom: 4px solid $dark-primary-color;
-      margin: 1rem 0;
-
-      &:hover:not(:disabled) {
-        background-color: $dark-primary-color;
-      }
-    }
-
-    .btn-secondary {
-      background-color: $secondary-text-color;
-      border-bottom: 4px solid darken($secondary-text-color, 10);
-      margin: 1rem 0;
-
-      &:hover:not(:disabled) {
-        background-color: darken($secondary-text-color, 10);
-      }
-    }
-
-    .btn-outline-primary {
-      border: 2px solid $primary-color;
-      color: $primary-color;
-      margin: 1rem 0;
-
-      &:hover:not(:disabled) {
-        background-color: $primary-color;
-        color: $invert-text-color;
-      }
-    }
-
-    .btn-outline-secondary {
-      border: 2px solid $secondary-text-color;
-      color: $secondary-text-color;
-      margin: 1rem 0;
-
-      &:hover:not(:disabled) {
-        background-color: $secondary-text-color;
-        color: $invert-text-color;
-      }
-    }
-
-    .btn-accent {
-      background-color: $accent-color;
-      border-bottom: 4px solid darken($accent-color, 10);
-      color: $invert-text-color;
-      margin: 1rem 0;
-
-      &:hover:not(:disabled) {
-        background-color: darken($accent-color, 10);
-      }
-    }
-
-    .btn-outline-accent {
-      border: 2px solid $accent-color;
-      color: $accent-color;
-      margin: 1rem 0;
-
-      &:hover:not(:disabled) {
-        background-color: $accent-color;
-        color: $invert-text-color;
-      }
-    }
 
     .dropdown-accent {
       background-color: lighten($accent-color, 30);
@@ -426,6 +346,87 @@ aside {
   }
 }
 
+.btn {
+  border-radius: .25rem;
+  border-width: 0;
+  letter-spacing: 2px;
+  padding: .75rem 1.5rem;
+  transition: background-color ease-in-out .25s;
+
+  &:focus,
+  &:active {
+    box-shadow: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border-bottom: 4px solid $dark-primary-color;
+  margin: 1rem 0;
+
+  &:hover:not(:disabled) {
+    background-color: $dark-primary-color;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary-text-color;
+  border-bottom: 4px solid darken($secondary-text-color, 10);
+  margin: 1rem 0;
+
+  &:hover:not(:disabled) {
+    background-color: darken($secondary-text-color, 10);
+  }
+}
+
+.btn-outline-primary {
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  margin: 1rem 0;
+
+  &:hover:not(:disabled) {
+    background-color: $primary-color;
+    color: $invert-text-color;
+  }
+}
+
+.btn-outline-secondary {
+  border: 2px solid $secondary-text-color;
+  color: $secondary-text-color;
+  margin: 1rem 0;
+
+  &:hover:not(:disabled) {
+    background-color: $secondary-text-color;
+    color: $invert-text-color;
+  }
+}
+
+.btn-accent {
+  background-color: $accent-color;
+  border-bottom: 4px solid darken($accent-color, 10);
+  color: $invert-text-color;
+  margin: 1rem 0;
+
+  &:hover:not(:disabled) {
+    background-color: darken($accent-color, 10);
+  }
+}
+
+.btn-outline-accent {
+  border: 2px solid $accent-color;
+  color: $accent-color;
+  margin: 1rem 0;
+
+  &:hover:not(:disabled) {
+    background-color: $accent-color;
+    color: $invert-text-color;
+  }
+}
+
 .svg,
 .replaced-svg {
   &.icons-primary {
@@ -455,4 +456,29 @@ aside {
 
 .main-list {
   list-style-type: square;
+}
+
+#exampleFormLogin {
+  margin: $blockMargin 0;
+}
+
+.form-control {
+  padding: 1rem 1.75rem;
+  color: $main-text-color;
+  background-color: $main-bg;
+  background-clip: padding-box;
+  border: 0;
+  border-bottom: 2px solid $divider-color;
+  border-radius: 0;
+  height: auto;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+form {
+  label {
+    letter-spacing: 2px;
+  }
 }
